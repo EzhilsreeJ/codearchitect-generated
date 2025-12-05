@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const greetingElement = document.getElementById('greeting');
-    if (greetingElement) {
-        greetingElement.textContent = 'hello Ezhil';
+    const myButton = document.getElementById('myButton');
+
+    if (myButton) {
+        myButton.addEventListener('click', () => {
+            alert('Hello from JavaScript!');
+            console.log('Button was clicked!');
+        });
     }
 });
